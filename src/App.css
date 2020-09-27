@@ -1,38 +1,85 @@
 .App {
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.title {
+  text-align: center;
+  color: #fff;
+  margin:20px 0 30px;
+}
+.subtitle {
+  border-left: 6px solid #fff;
+  padding-left: 10px;
+  color: #eee;
+  margin: 20px 0;
+}
+.hot-comment-list {
+  margin-bottom: 40px;
+}
+.grid-item {
+  cursor: pointer;
+  width: 300px;
+  border-radius: 4px;
+  padding: 20px 20px 20px 10px;
+  margin-bottom: 16px;
+  overflow: auto;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  vertical-align: middle;
+}
+
+.grid-item .avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.grid-item .userinfo {
+  float: left;
+  height: 100%;
+}
+.grid-item .content {
+  color: #333;
+  padding-left: 80px;
+  /* text-indent: 2em; */
+}
+.grid-item .nickname {
+  color: #999;
+  font-size: 13px;
+  text-align: right;
+  padding-top: 6px;
+}
+
+.grid-item .time {
+  color: #aaa;
+  font-size: 12px;
+  text-align: right;
+  padding-top: 2px;
+}
+
+.load-more {
+  margin-top: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.load-more .load-more-button {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 100px;
+  padding: 10px;
+  display: inline-block;
+  color: #cd353b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.load-more-button:hover {
+  background-color: #cd353b;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#hot-comment-list {
+  margin-bottom: 40px;
 }
