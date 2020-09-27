@@ -4,7 +4,7 @@
  * @Autor: Pony
  * @Date: 2020-09-27 23:45:05
  * @LastEditors: Pony
- * @LastEditTime: 2020-09-27 23:46:58
+ * @LastEditTime: 2020-09-28 00:22:05
  */
 /**
  * 这个文件的代码是为了获取所有评论内容，然后保存在一个json文件里。
@@ -19,7 +19,7 @@ const TOTAL = 2027400;
 function getData(limit = 50, offset, before) {
   return Axios.get("https://musicapi.leanapp.cn/comment/music", {
     params: {
-      id: 518686034,
+      id: 1293886117,
       limit,
       offset,
       before,

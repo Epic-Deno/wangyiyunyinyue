@@ -4,7 +4,7 @@
  * @Autor: Pony
  * @Date: 2020-09-27 00:11:20
  * @LastEditors: Pony
- * @LastEditTime: 2020-09-28 00:06:48
+ * @LastEditTime: 2020-09-28 00:25:27
  */
 import React, { useEffect, useState } from 'react';
 import './App.css';
@@ -14,7 +14,7 @@ import Bricks from "bricks.js"; //瀑布流布局插件
 function getData(limit = 50, offset) {
   return Axios.get("https://musicapi.leanapp.cn/comment/music", {
     params: {
-      id: 518686034,
+      id: 1293886117,
       limit,
       offset, // 倒叙
     },
@@ -105,7 +105,7 @@ function App() {
     <div className="App">
       <h1 className="title">-戒烟の网易云评论-</h1>
       <div style={{ textAlign: 'center' }}>
-        <iframe className="linkFrame" src="//player.bilibili.com/player.html?aid=29353549&amp;cid=44921106&amp;bvid=BV1Ws411V76b&amp;danmaku=0&amp;page=1" style={{ width: '800px', height: '500px' }} title="jieyan" frameBorder="no" framespacing="0" allowFullScreen={true} scrolling="no" border="0"></iframe>
+        <iframe className="linkFrame" src="//player.bilibili.com/player.html?aid=29353549&amp;cid=51010798&amp;bvid=BV1gs411M7LM&amp;danmaku=0&amp;page=1" style={{ width: '800px', height: '500px' }} title="jieyan" frameBorder="no" framespacing="0" allowFullScreen={true} scrolling="no" border="0"></iframe>
       </div>
       <h2 className="subtitle">
         热评 TOP20
